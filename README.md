@@ -1,13 +1,25 @@
-# LQRAudioRecord
-本库集成录音与播音功能，使用简单方便，让IM集成语音不再是难题。
-
 
 ## 一、简述
-该库可进行语音录制及播放，方便IM项目集成语音功能。
 
-1. 录音可获取分贝，并默认回传10秒倒计时。
-1. 播放时贴耳自动转为听筒播放，离耳时转公放。
+项目中需要实现聊天录音的功能，搜集资料实现初步功能之后，在这里统一整理一下。
 
+Android提供了两个API用于录音的实现：MediaRecorder 和AudioRecord。
+
+1、MediaRecorder：录制的音频文件是经过压缩后的，需要设置编码器。并且录制的音频文件可以用系统自带的Music播放器播放。MediaRecorder已经集成了录音、编码、压缩等，并支持少量的录音音频格式，但是这也是他的缺点，支持的格式过少并且无法实时处理音频数据。
+
+2、AudioRecord：主要实现对音频实时处理以及边录边播功能，相对MediaRecorder比较专业，输出是PCM语音数据，如果保存成音频文件，是不能够被播放器播放的，所以必须先写代码实现数据编码以及压缩。
+
+#### MediaRecorder
+
+MediaRecorder因为已经集成了录音、编码、压缩等功能，所以使用起来相对比较简单。
+
+具体关于MediaRecorder的介绍，可以参考这里
+
+[Android 录音实现（MediaRecorder）](https://www.jianshu.com/p/de779d509e6c)
+
+[Android 录音实现（AudioRecord）](https://www.jianshu.com/p/90c4071c7768)
+
+## 二、效果
 
 以下是Demo效果：
 
@@ -16,7 +28,7 @@
 [DemoApp下载](app-debug.apk)
 
 
-### 二、权限
+### 三、权限
 
     <!-- 录音 -->
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
@@ -25,9 +37,10 @@
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
-## 三、使用
+## 四、使用
 
 ### 1、常规设置
+
 #### 1)设置最大时长：
 
 	//默认时长60秒
