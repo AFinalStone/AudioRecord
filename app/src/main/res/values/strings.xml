@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LQRAudioRecord</string>
+    <string name="community_chat_list_remove_above_cancel_send">手指上滑，取消发送</string>
+    <string name="community_chat_list_loosen_cancel_send">松开手指，取消发送</string>
+    <string name="community_chat_list_rec_voice_short">录音时间太短</string>
+    <string name="community_chat_list_rec_voice_failure">录音失败！</string>
+</resources>

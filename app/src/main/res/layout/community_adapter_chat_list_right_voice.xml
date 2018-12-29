@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:gravity="right"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:paddingEnd="5dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="我"
+            android:textColor="#592C00"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="6''" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content" />
+
+
+            <com.lqr.audiodemo.VoiceImageView
+                android:id="@+id/iv_voice"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:background="@drawable/background_chat_right_02"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingEnd="10dp"
+                android:paddingStart="40dp"
+                android:src="@drawable/community_chat_voice_play_anim_right" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 人物头像 -->
+    <!-- 人物头像 -->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:src="@mipmap/community_circle_court" />
+</LinearLayout>
