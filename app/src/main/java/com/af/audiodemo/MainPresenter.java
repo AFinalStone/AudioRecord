@@ -1,4 +1,4 @@
-package com.af.audiodemo.view;
+package com.af.audiodemo;
 
 import android.content.Context;
 import android.net.Uri;

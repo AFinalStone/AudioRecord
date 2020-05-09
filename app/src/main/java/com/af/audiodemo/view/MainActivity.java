@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import com.af.audiodemo.MainContract;
+import com.af.audiodemo.MainPresenter;
 import com.af.audiodemo.R;
 import com.af.audiodemo.view.widget.RecordAudioButton;
 import com.chad.library.adapter.base.BaseQuickAdapter;
