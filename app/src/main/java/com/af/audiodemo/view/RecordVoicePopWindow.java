@@ -1,4 +1,4 @@
-package com.lqr.audiodemo;
+package com.af.audiodemo.view;
 
 import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
@@ -9,8 +9,8 @@ import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
+import com.af.audiodemo.R;
+
 
 /**
  * @author syl
@@ -18,21 +18,20 @@ import butterknife.ButterKnife;
  */
 public class RecordVoicePopWindow extends PopupWindow {
 
-    @BindView(R.id.tv_rc_status)
-    TextView mTvRcStatus;
-    @BindView(R.id.iv_rc_status)
-    ImageView mIvRcStatus;
-    @BindView(R.id.iv_rc_volume)
-    ImageView mIvRcVolume;
-    @BindView(R.id.tv_rc_time)
-    TextView mTvRcTime;
     private View mContentView;
+    TextView mTvRcStatus;
+    ImageView mIvRcStatus;
+    ImageView mIvRcVolume;
+    TextView mTvRcTime;
 
     public RecordVoicePopWindow(Context context) {
         super(context);
         mContentView = LayoutInflater.from(context).inflate(R.layout.community_pop_record_voice, null);
         setContentView(mContentView);
-        ButterKnife.bind(this, mContentView);
+        mTvRcStatus = mContentView.findViewById(R.id.tv_rc_status);
+        mIvRcStatus = mContentView.findViewById(R.id.iv_rc_status);
+        mIvRcVolume = mContentView.findViewById(R.id.iv_rc_volume);
+        mTvRcTime = mContentView.findViewById(R.id.tv_rc_time);
         // 设置SelectPicPopupWindow弹出窗体的宽
         setWidth(ViewGroup.LayoutParams.MATCH_PARENT);
         // 设置SelectPicPopupWindow弹出窗体的高

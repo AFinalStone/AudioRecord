@@ -1,4 +1,4 @@
-package com.lqr;
+package com.af;
 
 import org.junit.Test;
 

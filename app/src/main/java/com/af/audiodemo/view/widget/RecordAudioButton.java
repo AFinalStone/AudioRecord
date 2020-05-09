@@ -1,11 +1,13 @@
-package com.lqr.audiodemo;
+package com.af.audiodemo.view.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Button;
+
+import com.af.audiodemo.R;
+
 
 /**
  * @author syl

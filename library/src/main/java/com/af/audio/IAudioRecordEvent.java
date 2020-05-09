@@ -1,4 +1,4 @@
-package com.lqr.audio;
+package com.af.audio;
 
 public class IAudioRecordEvent {
     public static final int AUDIO_RECORD_EVENT_TRIGGER = 1;

@@ -5,10 +5,10 @@
     android:layout_gravity="right"
     android:gravity="right"
     android:orientation="horizontal"
-    android:paddingBottom="5dp"
     android:paddingLeft="5dp"
+    android:paddingTop="5dp"
     android:paddingRight="10dp"
-    android:paddingTop="5dp">
+    android:paddingBottom="5dp">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -45,15 +45,15 @@
                 android:layout_height="wrap_content" />
 
 
-            <com.lqr.audiodemo.VoiceImageView
+            <com.af.audiodemo.view.widget.VoiceImageView
                 android:id="@+id/iv_voice"
                 android:layout_width="match_parent"
                 android:layout_height="28dp"
                 android:background="@drawable/background_chat_right_02"
                 android:clickable="true"
                 android:focusable="true"
-                android:paddingEnd="10dp"
                 android:paddingStart="40dp"
+                android:paddingEnd="10dp"
                 android:src="@drawable/community_chat_voice_play_anim_right" />
 
         </LinearLayout>
@@ -62,7 +62,7 @@
     <!-- 人物头像 -->
     <!-- 人物头像 -->
 
-    <de.hdodenhof.circleimageview.CircleImageView
+    <com.af.audiodemo.view.widget.CircleImageView
         android:id="@+id/iv_avatar"
         android:layout_width="40dp"
         android:layout_height="40dp"

@@ -1,4 +1,4 @@
-package com.lqr.audio;
+package com.af.audio;
 
 public abstract class IAudioState {
     public IAudioState() {
