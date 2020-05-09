@@ -1,4 +1,4 @@
-package com.lqr.audiodemo;
+package com.af.audiodemo.view.widget;
 
 import android.content.Context;
 import android.graphics.drawable.AnimationDrawable;

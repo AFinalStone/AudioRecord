@@ -1,4 +1,4 @@
-package com.lqr.audio;
+package com.af.audio;
 
 import android.annotation.TargetApi;
 import android.content.Context;

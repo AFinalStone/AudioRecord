@@ -1,4 +1,4 @@
-package com.lqr.audio;
+package com.af.audio;
 
 public class AudioStateMessage {
     public int what;
