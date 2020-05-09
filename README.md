@@ -32,10 +32,8 @@ MediaRecorder因为已经集成了录音、编码、压缩等功能，所以使�
 
     <!-- 录音 -->
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <!--播音-->
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
 ## 四、使用
 
